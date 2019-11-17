@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="864" started-at="2019-11-16T20:46:07 CET" finished-at="2019-11-16T20:46:08 CET">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="864" started-at="2019-11-16T20:46:07 CET" finished-at="2019-11-16T20:46:08 CET">
+      <class name="SelenideTests">
+        <test-method status="FAIL" signature="Home_page(SelenideTests)" name="Home_page" duration-ms="580" started-at="2019-11-16T20:46:07 CET" finished-at="2019-11-16T20:46:08 CET">
+          <exception class="groovy.lang.MissingMethodException">
+            <message>
+              <![CDATA[No signature of method: SelenideTests.$() is applicable for argument types: (java.lang.String) values: [https://demoqa.com/]
+Possible solutions: is(java.lang.Object), Spy(), any(), Spy(groovy.lang.Closure), Spy(java.lang.Class), Spy(java.lang.Object)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[groovy.lang.MissingMethodException: No signature of method: SelenideTests.$() is applicable for argument types: (java.lang.String) values: [https://demoqa.com/]
+Possible solutions: is(java.lang.Object), Spy(), any(), Spy(groovy.lang.Closure), Spy(java.lang.Class), Spy(java.lang.Object)
+at SelenideTests.Home_page(SelenideTests.groovy:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- groovy.lang.MissingMethodException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home_page -->
+        <test-method status="FAIL" signature="Go_home(SelenideTests)" name="Go_home" duration-ms="597" started-at="2019-11-16T20:46:07 CET" finished-at="2019-11-16T20:46:08 CET">
+          <exception class="groovy.lang.MissingMethodException">
+            <message>
+              <![CDATA[No signature of method: SelenideTests.open() is applicable for argument types: (java.lang.String) values: []
+Possible solutions: Spy(), grep(), Spy(groovy.lang.Closure), Spy(java.lang.Class), Spy(java.lang.Object), Spy(java.util.Map)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[groovy.lang.MissingMethodException: No signature of method: SelenideTests.open() is applicable for argument types: (java.lang.String) values: []
+Possible solutions: Spy(), grep(), Spy(groovy.lang.Closure), Spy(java.lang.Class), Spy(java.lang.Object), Spy(java.util.Map)
+at SelenideTests.Go_home(SelenideTests.groovy:42)
+]]>
+            </full-stacktrace>
+          </exception> <!-- groovy.lang.MissingMethodException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Go_home -->
+        <test-method status="FAIL" signature="Check Home page labels and links(SelenideTests)" name="Check Home page labels and links" duration-ms="601" started-at="2019-11-16T20:46:07 CET" finished-at="2019-11-16T20:46:08 CET">
+          <exception class="groovy.lang.MissingMethodException">
+            <message>
+              <![CDATA[No signature of method: SelenideTests.open() is applicable for argument types: (java.lang.String) values: [https://demoqa.com/]
+Possible solutions: Spy(), grep(), Spy(groovy.lang.Closure), Spy(java.lang.Class), Spy(java.lang.Object), Spy(java.util.Map)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[groovy.lang.MissingMethodException: No signature of method: SelenideTests.open() is applicable for argument types: (java.lang.String) values: [https://demoqa.com/]
+Possible solutions: Spy(), grep(), Spy(groovy.lang.Closure), Spy(java.lang.Class), Spy(java.lang.Object), Spy(java.util.Map)
+at SelenideTests.Check Home page labels and links(SelenideTests.groovy:55)
+]]>
+            </full-stacktrace>
+          </exception> <!-- groovy.lang.MissingMethodException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check Home page labels and links -->
+      </class> <!-- SelenideTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

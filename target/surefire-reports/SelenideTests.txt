@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: SelenideTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1.231 s <<< FAILURE! - in SelenideTests
+Home_page on Home_page(SelenideTests)(SelenideTests)  Time elapsed: 0.084 s  <<< FAILURE!
+groovy.lang.MissingMethodException: 
+No signature of method: SelenideTests.$() is applicable for argument types: (java.lang.String) values: [https://demoqa.com/]
+Possible solutions: is(java.lang.Object), Spy(), any(), Spy(groovy.lang.Closure), Spy(java.lang.Class), Spy(java.lang.Object)
+	at SelenideTests.Home_page(SelenideTests.groovy:32)
+
+Go_home on Go_home(SelenideTests)(SelenideTests)  Time elapsed: 0.009 s  <<< FAILURE!
+groovy.lang.MissingMethodException: 
+No signature of method: SelenideTests.open() is applicable for argument types: (java.lang.String) values: []
+Possible solutions: Spy(), grep(), Spy(groovy.lang.Closure), Spy(java.lang.Class), Spy(java.lang.Object), Spy(java.util.Map)
+	at SelenideTests.Go_home(SelenideTests.groovy:42)
+
+Check Home page labels and links on Check Home page labels and links(SelenideTests)(SelenideTests)  Time elapsed: 0.003 s  <<< FAILURE!
+groovy.lang.MissingMethodException: 
+No signature of method: SelenideTests.open() is applicable for argument types: (java.lang.String) values: [https://demoqa.com/]
+Possible solutions: Spy(), grep(), Spy(groovy.lang.Closure), Spy(java.lang.Class), Spy(java.lang.Object), Spy(java.util.Map)
+	at SelenideTests.Check Home page labels and links(SelenideTests.groovy:55)
+
