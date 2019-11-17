@@ -15,6 +15,4 @@ class PageHtmlContactForm {
     SelenideElement afterSubmit = $(byXpath("//h1[@class='page-title' and text()='Oops! That page can’t be found.']"))
 
 
-
-
 }

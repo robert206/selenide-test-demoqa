@@ -116,5 +116,30 @@ def cfg = utils.readXmlConfig("Config",ENV_NAME)
 
     }
 
+    def "Interactions -Sortable-retrieve all elements" () {
+        given :
+            def pageInter = new PageInteractions()
+            open(cfg.url)
+        when: "we click Sortable link"
+            pageInter.sortableLink.click()
+            pageInter.printSortableElements()
+        then:
+            println "shit"
+
+    }
+
+    def "Interactions -Selectable" () {
+        given:
+            def pageInter = new PageInteractions()
+            open(cfg.url)
+        when:
+            pageInter.selectableLink.click()
+            pageInter.traverseSelect()
+        then:
+            println "done"
+    }
+
+
+
 
 }
