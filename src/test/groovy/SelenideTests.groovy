@@ -9,12 +9,10 @@ import com.codeborne.selenide.SelenideElement
 import static com.codeborne.selenide.Selenide.*
 import static com.codeborne.selenide.Condition.*
 import static com.codeborne.selenide.WebDriverRunner.*
-
-import com.codeborne.selenide.Selectors.ByText
-
-import static com.codeborne.selenide.Condition.*
-import spock.lang.Shared
+import static com.codeborne.selenide.Selectors.*
 import spock.lang.Specification
+
+
 
 
 class SelenideTests extends Specification {
@@ -115,6 +113,90 @@ def cfg = utils.readXmlConfig("Config",ENV_NAME)
             assert title() == "Google" : "Not landed at Google site"
 
     }
+
+    def "Interactions -Sortable-retrieve all elements" () {
+        given :
+            def pageInter = new PageInteractions()
+            open(cfg.url)
+        when: "we click Sortable link"
+            pageInter.sortableLink.click()
+            pageInter.printSortableElements()
+        then:
+            println "shit"
+
+    }
+
+    def "Interactions -Selectable" () {
+        given:
+            def pageInter = new PageInteractions()
+            open(cfg.url)
+        when:
+            pageInter.selectableLink.click()
+            //get all elements in collection and traverse them by clicking each one from top to bottom
+            pageInter.traverseSelectValueCheck()
+        then:
+            println "All elements were traversed"
+    }
+
+// resizable
+    def "Interactions-Resizable" () {
+        given:
+            def pageInter = new PageInteractions()
+            open(cfg.url)
+            def offsetX = 300
+            def offsetY = 300
+            def xpathString = "//*[@id='resizable' and @class='ui-widget-content ui-resizable' and @style='width: " + offsetX +"px; height: " + offsetY + "px;']"
+            println "$xpathString"
+        when: "we open page with resizable window"
+            pageInter.resLink.click()
+            pageInter.resizeWindow(offsetX,offsetY)
+        then: "we check if window was actualy resized by finding changed element"
+            SelenideElement expectedWindow = $(byXpath(xpathString))
+            assert expectedWindow.shouldBe(visible) : "Window was not resized correctly"
+    }
+
+
+    def "Interactions - Drag and Drop into another element" () {
+        given: "initial page"
+            def pageInter = new PageInteractions()
+            open(cfg.url)
+        when: "we click link to go to subpage and drag and drop element into his position"
+            pageInter.dropLink.click()
+            //verify we are at page
+            assert pageInter.dragMe.shouldBe(visible)
+            assert pageInter.dropHere.shouldBe(visible)
+            actions().dragAndDropBy(pageInter.dragMe,120,30).perform()
+        then:
+            sleep(2000)
+            assert $(byText("Dropped!")).shouldBe(visible) : "Element was not dropped"
+    }
+
+
+
+    def "Upload File test with Alert Window" () {
+        given:
+            def keybrd = new KeyboardEvents()
+            open(cfg.url)
+            ClassLoader classLoader = getClass().getClassLoader()
+            File file = new File(classLoader.getResource("FileUploadTestFile").getFile())
+            assert file.exists()
+        when:
+            keybrd.keybrdLink.click()
+            keybrd.uploadFileTest(file) // select file and submit
+        then:
+            assert $(withText("No file chosen")).shouldNotBe(visible)
+            sleep(1000)
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 }

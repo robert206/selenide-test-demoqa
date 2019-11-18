@@ -22,10 +22,6 @@ class PageHome {
         assert homeTitle.shouldBe(Condition.visible)
     }
 
-    def checkLabel () {
-        assert inter.displayed : " Interactions link missing"
-        assert inter.text == "Interactions"
-    }
 
     def clickInteractions () {
         interLink.click()

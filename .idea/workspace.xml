@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1482cadf-fb13-459b-b87b-eff990f68aac" name="Default" comment="" />
+    <list default="true" id="1482cadf-fb13-459b-b87b-eff990f68aac" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/KeyboardEvents.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FileUploadTestFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/spock-reports/SelenideTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/SelenideTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/spock-reports/aggregated_report.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/aggregated_report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/spock-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/PageHome.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/PageHome.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/PageInteractions.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/PageInteractions.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/SelenideTests.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/SelenideTests.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageInteractions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageInteractions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SelenideTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SelenideTests.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1TiAwOtZFXWOSClgSzbhe5usRic" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -27,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SelenideTests.Html Page Submit form Links">
+  <component name="RunManager" selected="JUnit.SelenideTests.Upload File test with Alert Window">
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -46,55 +64,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelenideTests.Check Home page labels and links" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelenideTests.Interactions - Droppable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SelenideTests" />
-      <option name="METHOD_NAME" value="Check Home page labels and links" />
+      <option name="METHOD_NAME" value="Interactions - Droppable" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelenideTests.Go to Interactions and check links" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelenideTests.Interactions -Selectable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SelenideTests" />
-      <option name="METHOD_NAME" value="Go to Interactions and check links" />
+      <option name="METHOD_NAME" value="Interactions -Selectable" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelenideTests.Home_page" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelenideTests.Interactions-Resizable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SelenideTests" />
-      <option name="METHOD_NAME" value="Home_page" />
+      <option name="METHOD_NAME" value="Interactions-Resizable" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelenideTests.Html Page Submit Form" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelenideTests.Upload File test with Alert Window" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SelenideTests" />
-      <option name="METHOD_NAME" value="Html Page Submit Form" />
+      <option name="METHOD_NAME" value="Upload File test with Alert Window" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelenideTests.Html Page Submit form Links" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelenideTests.Upload File test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SelenideTests" />
-      <option name="METHOD_NAME" value="Html Page Submit form Links" />
+      <option name="METHOD_NAME" value="Upload File test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -118,19 +136,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SelenideTests.Home_page" />
-      <item itemvalue="JUnit.SelenideTests.Check Home page labels and links" />
-      <item itemvalue="JUnit.SelenideTests.Go to Interactions and check links" />
-      <item itemvalue="JUnit.SelenideTests.Html Page Submit Form" />
-      <item itemvalue="JUnit.SelenideTests.Html Page Submit form Links" />
+      <item itemvalue="JUnit.SelenideTests.Interactions -Selectable" />
+      <item itemvalue="JUnit.SelenideTests.Interactions-Resizable" />
+      <item itemvalue="JUnit.SelenideTests.Interactions - Droppable" />
+      <item itemvalue="JUnit.SelenideTests.Upload File test" />
+      <item itemvalue="JUnit.SelenideTests.Upload File test with Alert Window" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SelenideTests.Html Page Submit form Links" />
-        <item itemvalue="JUnit.SelenideTests.Html Page Submit Form" />
-        <item itemvalue="JUnit.SelenideTests.Go to Interactions and check links" />
-        <item itemvalue="JUnit.SelenideTests.Check Home page labels and links" />
-        <item itemvalue="JUnit.SelenideTests.Home_page" />
+        <item itemvalue="JUnit.SelenideTests.Upload File test with Alert Window" />
+        <item itemvalue="JUnit.SelenideTests.Upload File test" />
+        <item itemvalue="JUnit.SelenideTests.Interactions - Droppable" />
+        <item itemvalue="JUnit.SelenideTests.Interactions-Resizable" />
+        <item itemvalue="JUnit.SelenideTests.Interactions -Selectable" />
       </list>
     </recent_temporary>
   </component>
@@ -143,5 +161,18 @@
       <updated>1573823543520</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
