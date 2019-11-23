@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1482cadf-fb13-459b-b87b-eff990f68aac" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/KeyboardEvents.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FileUploadTestFile" afterDir="false" />
+    <list default="true" id="0b53449d-8a3c-4929-ba5d-aef18b0ab49a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/PageSelectMenu.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/PageSpinner.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/TooltipsAndClicks.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenide.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Selenide.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/spock-reports/SelenideTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/SelenideTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/spock-reports/aggregated_report.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/aggregated_report.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/spock-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/spock-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/KeyboardEvents.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/KeyboardEvents.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/groovy/PageHome.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/PageHome.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/PageInteractions.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/PageInteractions.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/PageSwitchWindows.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/PageSwitchWindows.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/SelenideUtils.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/SelenideUtils.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/SelenideTests.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/SelenideTests.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/PageHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageHome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageInteractions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageInteractions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SelenideUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SelenideUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SelenideTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SelenideTests.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,6 +28,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Robert Leskovsek &lt;57194951+robert206@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TiAwOtZFXWOSClgSzbhe5usRic" />
@@ -31,7 +42,7 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -45,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SelenideTests.Upload File test with Alert Window">
+  <component name="RunManager" selected="JUnit.SelenideTests.Mouse-over open menu">
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -64,55 +75,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelenideTests.Interactions - Droppable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelenideTests.Mouse-over open menu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SelenideTests" />
-      <option name="METHOD_NAME" value="Interactions - Droppable" />
+      <option name="METHOD_NAME" value="Mouse-over open menu" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelenideTests.Interactions -Selectable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelenideTests.Numbers options select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SelenideTests" />
-      <option name="METHOD_NAME" value="Interactions -Selectable" />
+      <option name="METHOD_NAME" value="Numbers options select" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelenideTests.Interactions-Resizable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelenideTests.Select Menues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SelenideTests" />
-      <option name="METHOD_NAME" value="Interactions-Resizable" />
+      <option name="METHOD_NAME" value="Select Menues" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelenideTests.Upload File test with Alert Window" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelenideTests.Traverse Numbers dropdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SelenideTests" />
-      <option name="METHOD_NAME" value="Upload File test with Alert Window" />
+      <option name="METHOD_NAME" value="Traverse Numbers dropdown" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelenideTests.Upload File test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelenideTests.Traverse options Continents Dropdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SelenideTests" />
-      <option name="METHOD_NAME" value="Upload File test" />
+      <option name="METHOD_NAME" value="Traverse options Continents Dropdown" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -136,25 +147,25 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SelenideTests.Interactions -Selectable" />
-      <item itemvalue="JUnit.SelenideTests.Interactions-Resizable" />
-      <item itemvalue="JUnit.SelenideTests.Interactions - Droppable" />
-      <item itemvalue="JUnit.SelenideTests.Upload File test" />
-      <item itemvalue="JUnit.SelenideTests.Upload File test with Alert Window" />
+      <item itemvalue="JUnit.SelenideTests.Traverse options Continents Dropdown" />
+      <item itemvalue="JUnit.SelenideTests.Traverse Numbers dropdown" />
+      <item itemvalue="JUnit.SelenideTests.Select Menues" />
+      <item itemvalue="JUnit.SelenideTests.Numbers options select" />
+      <item itemvalue="JUnit.SelenideTests.Mouse-over open menu" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SelenideTests.Upload File test with Alert Window" />
-        <item itemvalue="JUnit.SelenideTests.Upload File test" />
-        <item itemvalue="JUnit.SelenideTests.Interactions - Droppable" />
-        <item itemvalue="JUnit.SelenideTests.Interactions-Resizable" />
-        <item itemvalue="JUnit.SelenideTests.Interactions -Selectable" />
+        <item itemvalue="JUnit.SelenideTests.Mouse-over open menu" />
+        <item itemvalue="JUnit.SelenideTests.Numbers options select" />
+        <item itemvalue="JUnit.SelenideTests.Select Menues" />
+        <item itemvalue="JUnit.SelenideTests.Traverse Numbers dropdown" />
+        <item itemvalue="JUnit.SelenideTests.Traverse options Continents Dropdown" />
       </list>
     </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1482cadf-fb13-459b-b87b-eff990f68aac" name="Default" comment="" />
+      <changelist id="0b53449d-8a3c-4929-ba5d-aef18b0ab49a" name="Default Changelist" comment="" />
       <created>1573823543520</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

@@ -1,3 +1,8 @@
+import org.apache.commons.mail.*;
+
+
+
+
 class SelenideUtils {
 
 // reads config.file parameters into class To
@@ -23,4 +28,31 @@ class SelenideUtils {
     }
 
 
+
+    def sendReportToEmail () {
+        // Create the attachment
+        EmailAttachment attachment = new EmailAttachment();
+        attachment.setPath("/build/spock-reports/SelenideTests.html");
+        attachment.setDisposition(EmailAttachment.ATTACHMENT);
+        attachment.setDescription("Picture of John");
+        attachment.setName("SelenideHtml");
+
+        // Create the email message
+        MultiPartEmail email = new MultiPartEmail();
+        email.setAuthenticator(new DefaultAuthenticator("robert.leskovsek@gmail.com","navigate206"))
+        email.setSmtpPort(465)
+        email.setSSLOnConnect(true)
+
+        email.setHostName("smtp.gmail.com");
+        email.addTo("robert.leskovsek@gmail.com", "Robert Leskovsek");
+        email.setFrom("robert.leskovsek@gmail.com", "Me");
+        email.setSubject("The picture");
+        email.setMsg("Here is the picture you wanted");
+
+        // add the attachment
+        email.attach(attachment);
+
+        // send the email
+        email.send();
+    }
 }
