@@ -1,23 +1,12 @@
 import com.codeborne.selenide.Configuration
 import com.codeborne.selenide.ElementsCollection
-import org.openqa.selenium.By
-import org.openqa.selenium.Capabilities
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.chrome.ChromeDriver
-import org.openqa.selenium.chrome.ChromeOptions
-import org.openqa.selenium.remote.RemoteWebDriver
 import com.codeborne.selenide.SelenideElement
-import org.openqa.selenium.support.ui.Select
-
-import java.util.concurrent.locks.Condition
-
-import static com.codeborne.selenide.Selenide.*
-import static com.codeborne.selenide.Condition.*
-import static com.codeborne.selenide.WebDriverRunner.*
-import static com.codeborne.selenide.Selectors.*
 import spock.lang.Specification
 
-
+import static com.codeborne.selenide.Condition.*
+import static com.codeborne.selenide.Selectors.*
+import static com.codeborne.selenide.Selenide.*
+import static com.codeborne.selenide.WebDriverRunner.url
 
 
 class SelenideTests extends Specification {
@@ -39,26 +28,6 @@ def cfg = utils.readXmlConfig("Config",ENV_NAME)
     }
 
 
-    def "Home_page" () {
-        given: "home page address"
-            open("https://demoqa.com/")
-        when: "traaa"
-            SelenideElement title = $(By.xpath("//img[@class='preload-me lazyloading']"))
-        then: "tralala"
-        assert title.shouldBe(visible) : "Naslov se vidi"
-    }
-
-
-    def "Go_home" () {
-        given: "home page"
-           open("https://demoqa.com/")
-        when: "we click home btn"
-            def homePage = new PageHome()
-            homePage.goHomePage()
-        then:
-         println "tralalala"
-
-    }
 
     def "Check Home page labels and links" () {
 
@@ -431,6 +400,28 @@ def cfg = utils.readXmlConfig("Config",ENV_NAME)
             classic.waitUntil(appears,2000).click()
         then:
             println "We selected Classical Rock"
+    }
+
+
+    def "Checkboxes" () {
+        given:
+            open(cfg.url)
+            def rc = new PageRadioCheckBox()
+            rc.radioCheckBoxLink.click()
+            //SPECIAL CASE -as label appears in the middle and by default element wants to be clicked in middle..
+            // it returns Element not clickable exception.Thus we click on label alone to select element by .click()
+            //.setSelected doesnt work Here as label interferes
+            ElementsCollection rcGrp1 = $$(byXpath("//*[@id='content']/div[2]/div/fieldset[1]/label")) //returns collection of all radiobtns above with city names
+        when:
+            for (SelenideElement radioBtn in rcGrp1) {
+                println "${radioBtn.text()}"
+                sleep(1000)
+                radioBtn.click()
+                assert $(byXpath("//*[@class='ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label ui-checkboxradio-checked ui-state-active']")) : "Radio btn not selected"
+            }
+        then:
+            println "All checkboxes were checked."
+
     }
 
 

@@ -29,6 +29,8 @@ class SelenideUtils {
 
 
 
+
+
     def sendReportToEmail () {
         // Create the attachment
         EmailAttachment attachment = new EmailAttachment();
